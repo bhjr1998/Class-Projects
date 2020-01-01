@@ -1,0 +1,9 @@
+Due to lack of understanding and knowledge, I did not do the tables Search Engine Optimization and Download Time Check.
+
+Also for lack of understanding and knowledge I did not do the following Columns in the Browser Compatibility table: Images Disabled, CSS Disabled, Other.
+
+Also for lack of understanding and knowledge I did not do the rows Accessibility Testing and Other in the Document Validation table.
+
+Due to lack of equipment I did not test the following columns in the Browser Compatibility table: Mac, Linux, Other.
+
+Also due to lack of equipment I did not test the following rows in the Browser Compatibility table: Opera, JAWS Screen Reader, Tablet, Safari, Other

@@ -1,0 +1,229 @@
+body {
+    height:auto;
+    font-family: Verdana, Arial, san-serif;
+    background-color: #5d4c3a;    
+}
+header{
+  background-color: #dabdab;
+  text-align: center;
+}
+main{
+    background-color: #c1a18a;
+    display:block;
+    
+}
+nav{
+    padding-top: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size:1.5em;
+    height: 84px;
+}
+
+nav a {text-decoration: none;}
+nav a:link{color: #D2B48C;}
+nav a:visited{color:#A0A0A0;}
+nav a:hover{color:#CC9933;}
+nav ul{list-style-type:none;}
+
+a {text-decoration: none;}
+footer{
+    background-color: #dabdab;
+    text-align: center;
+    font-style: italic;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: .80em;
+}
+
+#wrapper {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f5e7de;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 3px 3px 3px #0d0c0a;
+}
+#logo{
+    background-position:center;
+    background-image:url(logo.png);
+    background-repeat: no-repeat;
+    height:200px;
+    padding-top:50px;
+}
+table {
+    margin:auto;
+    width: 90%;
+    background-color: #c1a18a;
+    border: 2px solid #000000;
+    font-size:0.9em;   
+    font-style:normal;
+}
+td, th, thead, tbody, tfoot{
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+tr:nth-of-type(odd){background-color: #dabdab;}
+
+main ul, main h2, main h4,  main p{
+    padding-left: 3em;
+    padding-right: 2em; 
+	
+
+}
+
+main li{padding-bottom: 20px;}
+
+.floatleft{
+    float:left;
+}
+
+form{
+    padding:2em;
+}
+
+label{
+    float:left;
+    display:block;
+    text-align:right;
+    width: 8em;
+    padding-right:1em;
+}
+
+input, textarea{
+    display:block;
+    margin-bottom:1em;
+    
+}
+
+#mySubmit{
+    margin-left:9.5em;
+}
+p{
+     font-size:1em;   
+    }
+	
+#gallery { position: relative;
+			padding-bottom:400px;}
+figure { position: absolute;
+         left: 280px;
+		 text-align: center;
+		 opacity: .25; }
+#gallery ul { width: 300px; 
+              list-style-type: none;
+}
+#gallery li { display: inline; 
+              float: left;
+			  padding: 10px;
+}
+#gallery img { border-style: none; }
+#gallery a { color: #000000;
+             text-decoration: none; 
+			 font-style: italic;
+}
+#gallery span { position: absolute; 
+                left: -1000px;
+				opacity: 0;
+                transition: opacity 1s ease-in-out;
+				
+}
+#gallery a:hover span { position: absolute;
+                        top: 16px; 
+						left: 320px;
+                        text-align: center; 
+						opacity: 1;
+}
+
+#item{
+	background-color:#edd4c4;
+	margin-top:2em;
+	margin-bottom:2em;
+	margin-right:3em;
+	margin-left:3em;
+	width:80%;
+	padding:1em;
+	overflow:auto;
+}
+
+#mobile {display:none;}
+#desktop{display:inline;}
+/*
+Tablet
+*/
+
+@media only screen and (max-width: 1024px){
+body{
+        margin: 0;
+    }   
+#wrapper{
+        width:auto;
+        min-width: 0;
+        margin:0;
+        padding:0;
+        box-shadow:none;
+    }
+    
+    nav{
+     height: 105px;   
+    }
+h1{
+        margin-top:0;
+        margin-bottom:1em;
+        padding-top:1em;
+        padding-bottom:1em;
+        font-size:2.5em;
+    }
+h2, h4{
+        text-align: center;
+    }
+
+main{
+        margin:0;
+        font-size: 90%;
+    }
+}
+/*
+Phone
+*/
+@media only screen and (max-width: 768px){
+h2{
+        padding-top: 0.5em;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-right: 0.5em;
+        margin-right:0.5em;
+    }
+nav{
+        padding-right: 10px;
+		padding-top: 20px;
+		padding-bottom:20px;
+     }
+table{width:95%;} 
+td, th, thead, tbody, tfoot{
+    padding: 8px;
+    text-align: initial;
+}
+
+#mobile {display:inline;}
+#desktop{display:none;}
+
+figure { position: absolute;
+         left:10px;
+         top: 300px;
+		 text-align: center;
+		 opacity: .25; 
+}   
+    
+#gallery a:hover span { position: absolute;
+                        left: 50px; 
+						top: 316px;
+                        text-align: center; 
+						opacity: 1;
+}
+    #gallery { position: relative;
+			padding-bottom:550px;}
+    
+}
